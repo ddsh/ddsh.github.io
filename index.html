@@ -6,6 +6,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Robert Dadashi's Homepage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 html {
   font-size: 100%;
@@ -350,6 +351,23 @@ table td {
 .date {
   color: gray
 }
+
+#main-content {
+  width: 70%;
+  float: left;
+}
+
+#sidebar {
+  width: 22%;
+  float: right;
+}
+
+@media screen and (max-width: 768px) {
+  #main-content, #sidebar {
+    width: 100%;
+    float: none;
+  }
+}
 </style>
 
 
@@ -359,7 +377,7 @@ table td {
   <a>Robert Dadashi's Homepage</a>
 </div>
 
-<div style="width: 70%; float: left;">
+<div id="main-content">
 <p> I am a Staff Research Scientist in the Google DeepMind team in Paris.</p>
 
 <p align="justify"> Between 2019 and 2022, I led fundamental research on distributional RL, imitation learning, offline RL, and RL from human feedback. I am very proud to be a contributor of the <a href="https://github.com/deepmind/acme"> Acme </a> library.</p>  
@@ -384,7 +402,7 @@ table td {
     </a>
 </p>
 </div>
-<div style="width: 22%; float: right;">
+<div id="sidebar">
 <p><img src="images/website_photo.png" alt="me"></p>
 </div>
 
